@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+	<html lang="en-US">
+	
+	<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Spacedrone808 home page & Windows 7/2008R2 SP2+ ESU extended support">
+	<meta name="keywords" content="spacedrone808, sp808, retrowave88, microstock, media, for, sale, windows 7, sp2, retro, fallout, stalker, classic">
+	<meta name="author" content="spacedrone808">
+	<meta name="viewport" content="width=1400"> 
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+  <link rel="site icon" href="https://cloud.disroot.org/s/wYBdHCLPqLwGg8i/download">
+	<title> ..:::SPACEDRONE808:::.. </title>
+
+	<style>
+	#blink {
+  color:#ff0080;
+  font-weight: bold;
+  transition: 0.1s;
+  }
+ </style>tum
+ 
+	</head>
+	
+	<body>
+
+   <script type="text/javascript">
+    // <![CDATA[
+    var speed=40; 
+    var drops=18; 
+    var colour="#0066ff"; 
+    var flks=new Array();
+    var flkx=new Array();
+    var flky=new Array();
+    var fldy=new Array();
+    var swide, shigh, boddie;
+    var ie_version=(navigator.appVersion.indexOf("MSIE")!=-1)?parseFloat(navigator.appVersion.split("MSIE")[1]):false;
+    
+    function addLoadEvent(funky) {
+      var oldonload=window.onload;
+      if (typeof(oldonload)!='function') window.onload=funky;
+      else window.onload=function() {
+        if (oldonload) oldonload();
+        funky();
+      }
+    }
+    
+    addLoadEvent(storm);
+    
+    function storm() { if (document.getElementById) {
+      var r1, r2;
+      boddie=document.createElement("div");
+      boddie.style.position="fixed";
+      boddie.style.top="0px";
+      boddie.style.left="0px";
+      boddie.style.width="1px";
+      boddie.style.height="1px";
+      boddie.style.overflow="visible";
+      boddie.style.backgroundColor="transparent";
+      document.body.appendChild(boddie);
+      set_width();
+      for (var i=0; i<drops; i++) {
+        flks[i]=createDiv(16, 2, "transparent");
+        r1=createDiv(6, 2, colour);
+        r1.style.top="10px";
+        r1.style.left="0px";
+        flks[i].appendChild(r1);
+        r2=createDiv(10, 2, colour);
+        r2.style.top="0px";
+        r2.style.left="0px";
+        if (ie_version && ie_version<10) r2.style.filter="alpha(opacity=14)";
+        else r2.style.opacity=0.14;
+        flks[i].appendChild(r2);
+        flkx[i]=2*Math.floor(Math.random()*swide/2);
+        flky[i]=Math.floor(Math.random()*shigh);
+        fldy[i]=2+Math.floor(Math.random()*4);
+        flks[i].style.left=flkx[i]+"px";
+        flks[i].style.top=flky[i]+"px";
+        boddie.appendChild(flks[i]);
+      }
+      setInterval("bits_and_pixels()", speed);
+    }}
+    
+    function createDiv(height, width, colour) {
+      var div=document.createElement("div");
+      div.style.position="absolute";
+      div.style.height=height+"px";
+      div.style.width=width+"px";
+      div.style.overflow="hidden";
+      div.style.backgroundColor=colour;
+      return (div);
+    }
+    
+    window.onresize=set_width;
+    function set_width() {
+      var sw_min=999999;
+      var sh_min=999999;
+      if (document.documentElement && document.documentElement.clientWidth) {
+        sw_min=document.documentElement.clientWidth;
+        sh_min=document.documentElement.clientHeight;
+      }
+      if (typeof(self.innerWidth)!="undefined" && self.innerWidth) {
+        if (self.innerWidth<sw_min) sw_min=self.innerWidth;
+        if (self.innerHeight<sh_min) sh_min=self.innerHeight;
+      }
+      if (document.body.clientWidth) {
+        if (document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+        if (document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+      }
+      if (sw_min==999999 || sh_min==999999) {
+        sw_min=800;
+        sh_min=600;
+      }
+      swide=sw_min-2;
+      shigh=sh_min;
+    }
+    
+    function bits_and_pixels(c) {
+      var i, x, o=0;
+      for (i=0; i<drops; i++) {
+        flky[i]+=fldy[i];
+        if (flky[i]>=shigh-16) {
+    	  flky[i]=-16;
+    	  fldy[i]=2+Math.floor(Math.random()*4);
+    	  flkx[i]=2*Math.floor(Math.random()*swide/2);
+    	  flks[i].style.left=flkx[i]+"px";
+    	}
+    	flks[i].style.top=flky[i]+"px";
+      }
+    }
+    // ]]>
+    </script>
+    
+	<center>
+
+<hr class="top_line">
+
+	<br>
+  <a id="top"></a>
+	<a href="#bottom" title="GO TO BOTTOM OF THE PAGE">▼</a>
+	<a href="#about" title="CONTACT @MAIL AT THE BOTTOM OF THE PAGE"> █ ABOUT ME </a>	
+	<a href="#micro" title="PURCHASE MY DIGITAL ART"> ▓ MICROSTOCK </a>
+	<a href="#music" title="LISTEN TO MY MUSIC"> ▓ MUSIC</a>
+	<a href="#mods" title="LISTEN TO THE BEST TRACKER MUSIC EVER"> ▒ MODs </a>
+	<a href="#movies" title="WATCH CLASSIC MOVIES"> ▒ MOVIES </a>
+	<a href="#win7" title="LATEST PATCHES, FAQ FOR CLASSIC WINDOWS XP/7"> ░ WIN XP/7 x64</a>
+	<a href="#fallout" title="EVERYTHING ABOUT BEST POST-APOCALYPTIC RPG"> ░ FALLOUT </a>
+	<a href="#stalker" title="BEST SURVIVAL HORROR 3D SHOOTER"> ░ STALKER </a>
+	<a href="#links" title="CHECK NEATEST LINKS OF THE WEB"> ░ LINKS </a>
+	<a href="#support" title="SUPPORT ME IN MY FINDINGS"> █ SUPPORT ME </a> 
+	<audio style="width:88px; height:20px;" id="myBackdrop" title="PLAY/PAUSE BACKDROP AUDIO" controls loop autoplay>
+     <source src="https://cloud.disroot.org/s/X6rYLqdxmxcRmKd/download" type="audio/mp3">
+     Your browser does not support the audio element.
+</audio>
+	<br><br>
+<img src="img\rainbow.gif">
+	<br><br>
+	<div class="container">
+  <img src="img\bladerunner.gif" style="border: 4px solid white" title="BLADE RUNNER ANIMATION BY SPACEDRONE808 [R]" alt="BLADE RUNNER ANIMATION BY SPACEDRONE808"> 
+  <div class="overlay">
+    <div class="text">BLADE RUNNER ANIMATION COPY-LEFTED BY SPACEDRONE808 <br>
+   <a style="border: 8px solid #2151ff;"> AND DON'T FORGET TO WATCH 90s TV-SET AT THE BOTTOM OF THE PAGE.</a>  <a href="#tvset" title="GO WATCH COOL TV!"> ▼</a></div>
+  </div>
+</div>
+	
+<br>	
+<p style="background-color:#ff0080;">	
+<br>
+</p>		
+<p style="background-color:#00134d;" title="I'M HAPPY TO SEE EVERY VISITOR! YEAAAAHHH!!!!"> <br> <br>
+<a style="border: 20px groove red"> !!!! SITE IS NOT UPDATED ANYMORE PROCEED DIRECTLY TO </a> &nbsp;<a href="https://trackerninja.codeberg.page/" target="_blank"> &nbsp;MY BLOG&nbsp;</a><br><br><br>
+<a style="border: 8px solid #ff0080"> WEBSURFER, WELCOME TO MY OLDSCHOOL 90s'ISH PERSONAL PAGE! </a>
+	<br>
+	<br>
+	IT IS DEDICATED TO MY PROJECTS AND SOME THINGS OF THE PAST.
+  <br>
+	<br>	
+	AT MY SPARE TIME I LIKE TO DO BUNCH OF STUFF. 
+	<br>
+	<br>
+<a style="border: 8px solid #4d0099">A LITTLE BIT OF THIS, A LITTLE BIT OF THAT.</a>
+	<br>
+	<br>
+	HOPE THAT YOU WILL FIND MY PAGE PRETTY UNIQUE IN A RUBBISH LANDSCAPE OF MODERN WEB.
+
+	<br>
+	<br>
+	</center>
+	
+	<p style="background-color:#ff0080;">	
+<br>
+</p>
+	<center>
+	 <a href="#bottom" title="GO TO BOTTOM OF THE PAGE">▼</a> <h2 id="about"> █ ABOUT ME</h2> <h3>SLACKER FROM MOSCOW</h3> <a href="#top" title="GO TO TOP OF THE PAGE">▲</a>
+	</center>
+
+<center>
+<p style="background-color:#00134d;"> <br><br>
+I'M VERY WEIRD & UNCOMMON PERSON. 
+<br>
+<br>
+DON'T EVEN TRY TO FIND ANOTHER ONE.
+<br>
+<br>
+<a href="https://trackerninja.codeberg.page/" target="_blank" title="MAKE SURE TO CHECK MY LIL' VINTAGE COMPUTER BLOG!">PERSONAL BLOG [UPDATED CONSTANTLY]</a>
+<a href="https://www.tumblr.com/trackerninja808" target="_blank" title="MY MUSIC RELATED NEWS">TUMBLR BLOG</a>
+<a href="https://www.reddit.com/user/spacedrone808" target="_blank" title="GENERIC REDDIT FEED">REDDIT FFED</a>
+<a href="https://fosstodon.org/@trackerninja" target="_blank" title="NOT POSTING THERE ANYMORE, COZ THEY DELETE STUFF">MASTODON FEED</a>
+<br>
+<br>
+<br>
+</p>
+<p style="color:#ff0080;">::::::::POINTS OF INTEREST:::::::: </p>
+<p style="background-color:#00134d;">
+<br><br>
+<a style="border: 8px solid #ff0080;"> * RETRO COMPUTERS [AMIGA, ATARI] </a>
+<br>
+<br>
+<a style="border: 8px solid #ff0080;" title="THIS ONE IS MY FAV!"> * DEMOSCENE TRACKER MUSIC [MOD, S3M, XM, IT] </a>
+<br>
+<br>
+<a style="border: 8px solid #ff0080;"> * LANDSCAPE/INDUSTRIAL PHOTOGRAPHY </a>
+<br>
+<br>
+<a style="border: 8px solid #ff0080;"> * COMPUTER GRAPHICS </a>
+<br>
+<br>
+<br>
+</p>
+<p style="color:#2151ff;">::::::::TOTALLY UNINTERESTED IN::::::::</p>
+
+<p style="background-color:#00134d;">
+<br><br>
+<a style="border: 8px solid #2151ff;"> * SOCIAL NETWORKING </a> <br>
+<br>
+<a style="border: 8px solid #2151ff;" title="WISH YOU TO DISAPPEAR!"> * SHITTY CORPS LIKE FB, UGLY G, CRAPPY APPLE </a> <br>
+<br>
+<a style="border: 8px solid #2151ff;"> * BRAINWASHING </a> <br>
+<br>
+<a style="border: 8px solid #2151ff;"> * POLITICS </a> <br>
+<br>
+<a style="border: 8px solid #2151ff;"> * GLOBAL TRENDS </a> <br>
+<br>
+<a style="border: 8px solid #2151ff;"> * COVID-LIKE PROPOGANDA </a> <br>
+<br>
+<br>
+</p>
+
+</center>
+	<p style="background-color:#ff0080;">	
+<br>
+</p>
+	<center>
+	<a href="#bottom" title="GO TO BOTTOM OF THE PAGE">▼</a> <h2 id="micro"> ▓ MICROSTOCK </h2> <h3> GRAPHICS FOR SALE</h3> <a href="#top" title="GO TO TOP OF THE PAGE">▲</a>
+	</center>
+
+<center>
+
+<p style="background-color:#00134d;" "color:#ffffff;" title="OF COURSE ONLY IF YOU ARE UP TO IT!"> 
+<br><br> 
+<a style="border: 8px solid #ff0080"> SUPPORT ME WITH MY FINDINGS BY PURCHASING DIGITAL GFX</a> <br><br> 
+<a style="border: 8px solid #ff0080"> THAT I'M PRODUCING WITH THE HELP OF `PUTERS</a>
+<br>
+<br>
+<br>
+<a href="https://creativemarket.com/spacedrone808" target="_blank" title="RECOMMENDED PLACE">CREATIVE MARKET</a> 
+<a href="https://stock.adobe.com/ru/contributor/204789995/spacedrone808" target="_blank">ADOBE STOCK</a>
+<a href="https://www.dreamstime.com/spacedrone808_info" target="_blank">DREAMSTIME</a> 
+<a href="https://www.istockphoto.com/portfolio/spacedrone808" target="_blank">iSTOCKPHOTO</a>
+<a href="https://www.behance.net/retrowave88" target="_blank" title="MAIN PORTFOLIO">BEHANCE</a> 
+<a href="https://www.deviantart.com/spacedrone808" target="_blank">PEN DRAWINGS @ DEVIANTART </a>
+<br>
+<br>
+<br>
+</p>
+
+</center>
+	<p style="background-color:#ff0080;">	
+<br>
+</p>	
+	<center>
+	<a href="#bottom" title="GO TO BOTTOM OF THE PAGE">▼</a> <h2 id="music"> ▓ MY MUSIC</h2> <h3> VARIOUS MUSIC COOKINGS</h3> <a href="#top" title="GO TO TOP OF THE PAGE">▲</a>
+	</center>
+
+<center>
+<p style="background-color:#00134d;">
+<br><br>
+<a style="border: 8px solid #ff0080"> ONE OF MY HOBBIES IS TO COOK DIFFERENT TYPES OF SOUND.</a> 
+<br>
+<br>
+FOR THE MOST PART IT IS WEIRD AND EXPEREMENTAL STUFF. YES, I AM WEIRDO. 
+<br>
+<br>
+BUT YOU CAN SURELY HEAR SOME GENERIC MUSIC LIKE: 
+<br>
+<br>
+<a style="border: 8px solid #4d0099"> SYNTHWAVE, TRIP-HOP, DUB, PSYBIENT, CHILLOUT, AMBIENT AND EVEN DRONE. </a>
+<br>
+<br>
+MUSIC IS COOKED IN RENOISE 3 TRACKER ON CHEAP INTEGRATED AUDIO AND LOW-COST NONAME SPEAKERS. 
+<br>
+<br>
+<a href="https://cloud.disroot.org/s/YHABb3W85G5ikEW" title="YEAH-YEAH, IT'S COOL!" target="_blank">DOWNLOAD MY RENOISE COLOR THEME </a>
+<br>
+<br>
+CONTROL KEYS: NOVATION 25 SL MK2. SO NOTHING SPECIAL. 
+<br>
+<br>
+<a style="border: 8px solid #2151ff"> TOOLS: ONE PAIR OF HANDS, PAIR OF EYES, 1-2% OF SIMPLE BRAIN.</a>
+<br>
+<br>
+I DON'T USE ANY EXPENSIVE HARDWARE SYNTHESIZERS, ALL STUFF GENERATED BY SOFTWARE. 
+<br>
+<br>
+CURRENT CPU PROCESSING POWER ALLOWS SUCH LUXURY.
+<br>
+<br>
+<br>
+<a href="https://soundcloud.com/spacedrone808" target="_blank">MUSIC COOKING PAGE @ SOUNDCLOUD</a>
+<a href="https://spacedrone808.bandcamp.com" target="_blank">MUSIC COOKING PAGE @ BANDCAMP</a>
+<a href="https://www.tiktok.com/@trackerninja808" target="_blank">PERFECT TRACKER LOOPS @ TIKTOK</a>
+<br>
+<br>
+<br>
+</center>
+	<p style="background-color:#ff0080;">	
+<br>
+</p>
+	<center>
+	<a href="#bottom" title="GO TO BOTTOM OF THE PAGE">▼</a> <h2 id="mods"> ▒ BEST MODs</h2> <h3> RADDEST TRACKER MUSIC EVER! </h3> <a href="#top" title="GO TO TOP OF THE PAGE">▲</a>
+	</center>
+<p> 
+
+
+<center>
+<p style="background-color:#00134d;"> <br><br> HERE YOU CAN FIND THE BEST TRACKER MUSIC EVER.<br><br> DOSKPOP, JAZZ, FUNK, TRANCE, AMBIENT, DUB, CHILLOUT, METAL, POP.<br><br> 
+<a style="border: 8px solid #ff0080"> HUMAN MANKIND PRODUCED MORE THAN 288.000 MOD MUSIC.</a><br><br> 
+<a style="border: 8px solid #4d0099" title="COOL? HUH?"> LESS THAN 0.6% WORTH YOUR ATTENTION.</a> <br><br> ONLY CAREFULLY PRE-SELECTED STUFF, NO JUNK AT ALL!
+<br><br> IF YOU NOTICE SOME MODULE DUPS IN ARCHIVE PLEASE LET ME KNOW. <br> ALSO, IF YOU NEED THE MOST NEWEST MOD ARCHIVE, <br> JUST DROP ME A LINE & I'LL PROVIDE YOU A DOWNLOAD LINK.
+<br>
+<br>
+<br>
+<a href="https://en.wikipedia.org/wiki/Module_file" target="_blank" title="IF YOU DON'T KNOW - READ ON!">WHAT THE HECK IS MOD MUSIC?</a>
+<a href="http://un4seen.com" target="_blank" title="BEST MOD PLAYER EVER!">DOWNLOAD XMPLAY</a>
+<a href="https://mega.nz/file/ml4WlBjT#tPOOhOfVFg9BWwLWGCsHs2CCQ3iTnVysqeWMczJacbM" target="_blank" title="MEGA.NZ SHARE: COMPILED BY SPACEDRONE808 [21.07.19]">DOWNLOAD THE BEST MODS EVER</a>
+<br>
+<br>
+<br>
+</p>
+</center>
+	<p style="background-color:#ff0080;">	
+<br>
+</p>
+	<center>
+	<a href="#bottom" title="GO TO BOTTOM OF THE PAGE">▼</a> <h2 id="movies"> ▒ BEST MOVIES </h2> <h3> WATCH CLASSIC MOVIES </h3> <a href="#top" title="GO TO TOP OF THE PAGE">▲</a>
+	</center>
+
+<center>
+<p style="background-color:#00134d;">
+<br> <br>
+<a style="border: 8px solid #ff0080"> MY ALL-TIME FAVOURITES. LINKS POINT TO IMDB.COM. </a> 
+<br>
+<br>
+<br>
+
+<a style="border: 8px solid #ff0080" title="YOU SHOULD CHECK THESE ONES FIRST!"> VERY ATMOSPHERIC NON-VERBAL MOVIES BY RON FRICKE </a> 
+<a href="https://www.imdb.com/title/tt0088919" target="_blank">CHRONOS</a>
+<a href="https://www.imdb.com/title/tt0103767" target="_blank">BARAKA</a>
+<a href="https://www.imdb.com/title/tt0770802" target="_blank">SAMSARA</a>
+<br>
+<br>
+
+<a style="border: 8px solid #ff0080" title="FILMS ABOUT SIMPLE LIFE WITHOUT ANY FALSEHOOD!"> BEST FINNISH FILM DIRECTOR AKI KAURISMÄKI </a> 
+<a href="https://en.wikipedia.org/wiki/Aki_Kaurism%C3%A4ki" target="_blank">CHECK OUT HIS FILMOGRAPHY</a>
+<br>
+<br>
+
+<a style="border: 8px solid #ff0080"> 'PUTERS  </a>
+<a href="https://www.imdb.com/title/tt0119794" target="_blank">NIRVANA</a>
+<a href="https://www.imdb.com/title/tt0113481" target="_blank">JOHNNY MNEMONIC</a>
+<a href="https://www.imdb.com/title/tt0113243" target="_blank">HACKERS</a>
+<a href="https://www.imdb.com/title/tt0487831" target="_blank">IT CROWD</a>
+<a href="https://www.imdb.com/title/tt0113957" target="_blank">THE NET</a>
+<br>
+<br>
+
+<a style="border: 8px solid #ff0080"> DRAMA  </a>
+<a href="https://www.imdb.com/title/tt0116922" title="ULTRA SUSPENSE THRILLER BY DAVID LYNCH!" target="_blank">LOST HIGHWAY</a>
+<a href="https://www.imdb.com/title/tt0111161" target="_blank">THE SHAWSHANK REDEMPTION</a>
+<a href="https://www.imdb.com/title/tt0106856" target="_blank">FALLING DOWN</a>
+<a href="https://www.imdb.com/title/tt0075314" target="_blank">TAXI DRIVER</a>
+<a href="https://www.imdb.com/title/tt3011894" target="_blank">WILD TALES</a>
+<a href="https://www.imdb.com/title/tt0188674" target="_blank">HUMAN TRAFFIC</a>
+<a href="https://www.imdb.com/title/tt0100757" target="_blank">TAXI BLUES</a>
+<br>
+<br>
+
+<a style="border: 8px solid #ff0080"> COMEDY </a>
+<a href="https://www.imdb.com/title/tt1465522" target="_blank">TUCKER & DALE VS EVIL</a>
+<a href="https://www.imdb.com/title/tt0106308" target="_blank">EVIL DEAD III</a>
+<a href="https://www.imdb.com/title/tt0088846" target="_blank">BRAZIL</a>
+<a href="https://www.imdb.com/title/tt0387808" target="_blank">IDIOCRACY</a>
+<a href="https://www.imdb.com/title/tt0151804" target="_blank">OFFICE SPACE</a>
+<a href="https://www.imdb.com/title/tt0105950" target="_blank">BEAVIS & BUTT-HEAD</a>
+<a href="https://www.imdb.com/title/tt0099785" target="_blank">HOME ALONE I</a>
+<a href="https://www.imdb.com/title/tt0104431" target="_blank">HOME ALONE II</a>
+<br>
+<br>
+
+<a style="border: 8px solid #ff0080"> ACTION </a>
+<a href="https://www.imdb.com/title/tt0088247" target="_blank">TERMINATOR I</a>
+<a href="https://www.imdb.com/title/tt0103064" target="_blank">TERMINATOR II</a>
+<a href="https://www.imdb.com/title/tt0082096" target="_blank">DAS BOOT</a>
+<a href="https://www.imdb.com/title/tt0114898" target="_blank">WATERWORLD</a>
+<a href="https://www.imdb.com/title/tt0111257" target="_blank">SPEED</a>
+<a href="https://www.imdb.com/title/tt0099739" target="_blank">HARD TO KILL</a>
+<a href="https://www.imdb.com/title/tt0105690" target="_blank">UNDER SIEGE I</a>
+<a href="https://www.imdb.com/title/tt0114781" target="_blank">UNDER SIEGE II</a>
+<br>
+<br>
+
+<a style="border: 8px solid #ff0080" title="COMPLIED BY SPACEDRONE808"> BEST BEAVIS & BUTT-HEAD EPISODES</a>
+<a href="https://www.brighteon.com/480940e8-a2bf-49d2-930a-8f9e8f66930d" target="_blank"> BEST OF B & B </a>
+<a href="https://www.brighteon.com/66d37f7f-d937-4129-aee9-bd438ea44706" target="_blank"> BEST OF BEAVIS HYSTERICS </a>
+<a href="https://www.brighteon.com/f037a5b5-a87f-4655-87d2-a9c1d0ae9cbf" target="_blank"> B & B ARE SLEEPING </a>
+<a href="https://www.brighteon.com/955e0948-7257-4b3a-be25-8d5726989835" target="_blank"> B & B ARE DREAMING </a>
+<br>
+<br>
+<br>
+
+</p>
+</center>
+	<p style="background-color:#ff0080;">	
+<br>
+</p>	
+	<center>
+	<a href="#bottom" title="GO TO BOTTOM OF THE PAGE">▼</a> <h2 id="win7"> ░ WINDOWS XP/7 PATCHES</h2>	<h3>EXTENDED SUPPORT FOR CLASSIC WINDOWS</h3> <a href="#top" title="GO TO TOP OF THE PAGE">▲</a>
+	</center>
+
+<center>
+<p style="background-color:#00134d;"> 
+
+<br> <br>
+<a style="border: 8px solid #ff0080"> THIS SECTION COVERS PATCHING & FIXING OF CLASSIC OPERATING SYSTEMS. </a>
+<br>
+<br>
+<br>
+<a href="http://www.zone94.com/downloads/software/operating-systems/123-windows-xp-professional-sp3-x86-integral-edition" target="_blank" title="DOWNLOAD LATEST VERSION OF WINDOWS XP BY ZONE 94">WINDOWS XP 2021 INTEGRAL EDITION</a> <br>
+<br>
+<a href="https://blog.simplix.info/updatepack7r2" target="_blank" title="INCLUDES AFTER EOL ESU UPDATES! SITE IS IN RUSSIAN, BUT FIXES ARE ENGLISH">WINDOWS 7 SP2+ x64 / WINDOWS SERVER 2008 R2 SIMPLIX UPDATE PACK</a> <br>
+<br>
+<a href="https://mega.nz/file/ToIGFZ7J#YnkuoH4kv63nVUeDtguxh-sohuoHFu5i5tgjPLiyX1Y" target="_blank" title="TRANSFORM YOUR WINDOWS 7 TO WINDOWS VISTA [compiled by spacedrone808]">VISTA TRANSFORMATION PACK</a> <br>
+<br>
+<br>
+<a style="border: 8px solid #4d0099"> ALSO I WOULD LIKE TO OFFER YOU TO DOWNLOAD COMPREHENSIVE FAQ REGARDING WINDOWS 7 X64 OPERATING SYSTEM.</a> <br> <br> THIS IS ALL INFORMATION I HAVE ACCUMULATED FOR YEARS. MANY USEFUL STUFF, BUT
+<a id="blink">FILES ARE ALPHA & INCOMPLETE [!] </a>
+ 
+ <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 500);
+    </script>
+
+<br> <br> <br>
+<a href="https://mega.nz/file/fgAnDYST#DuGd4F8lE7G8IdZKdsyz1Vv3dR5CtoYHp1HYgW7NCHQ" target="_blank" title="CHOOSE DOC FLAVOUR, WILL OPEN AS MEGA.NZ LINK">DOWNLOAD DOC VERSION</a> <a href="https://mega.nz/file/u8BFnK5C#BuXip6jrnsBQ0kcoekiKyn6CkbVlvRZYdIb1eUtnDFg" target="_blank" title="CHOOSE PDF FLAVOUR, WILL OPEN AS MEGA.NZ LINK">DOWNLOAD PDF VERSION</a>
+<br>
+<br>
+<br>
+</p>
+</center>
+	<p style="background-color:#ff0080;">	
+<br>
+</p>
+	<center>
+	<a href="#bottom" title="GO TO BOTTOM OF THE PAGE">▼</a> <h2 id="fallout"> ░ FALLOUT</h2> <h3> RP+: ULTRA COMPLETE FALLOUT 2 PATCH</h3> <a href="#top" title="GO TO TOP OF THE PAGE">▲</a>
+	</center>
+
+<center>	
+<p style="background-color:#00134d;">
+<br> <br>
+<a href="https://www.gog.com/game/fallout_2" target="_blank" title="BUY FALLOUT 2"> FALLOUT 2</a> 
+
+<a style="border: 8px solid #ff0080" title="DID I MENTION THAT IT IS THE BEST RPG EVER?"> IS SIMPLY PUT THE BEST RPG GAME OF ALL TIMES. </a>
+<br><br> I CAN SAY SO MUCH ABOUT IT, BUT DON'T WANT TO WASTE YOUR TIME ON USELESS MAMBO-JAMBO. 
+<br>
+<br>
+BETTER TO PROVIDE SOME USEFUL LINKS, WHICH WILL HELP YOU TO ENCHANCE GAMEPLAY EXPERIENCE. 
+<br>
+<br>
+<a href="https://lemmings19.github.io/fallout-2-walkthrough/original_source.html" target="_blank" title="GUIDE TO ORIGINAL FALLOUT 2 CONTENT">THE NEARLY ULTIMATE FALLOUT 2 GUIDE</a> <br> BY PER JORNER
+<br>
+<br>
+<a href="https://f2rp.bgforge.net/" target="_blank" title="GUIDE TO EXTENDED CONTENT APPEARED IN RESTORATION PROJECT BY KILLAP">SUPPLEMENTARY GUIDE FOR KILLAP'S EXPANSION PACK</a> <br> BY MORTICIA & DAREK
+<br>
+<br>
+<a href="https://fallout.fandom.com/wiki/Fallout_Bible" target="_blank" title="MANDATORY CANONIC INFORMATION TO CONSUME">CLASSIC FALLOUT BIBLE</a> <br> BY CHRIS AVELLONE
+<br>
+<br>
+<a href="http://killap.net/" target="_blank" title="OBSOLETE PATCH, ONLY FOR HISTORICAL PURPOSES">FALLOUT 2 RESTORATION PROJECT</a> <br> BY KILLAP / CLASSIC, ABANDONED PATCH
+<br>
+<br>
+<a href="https://github.com/bgforgenet/fallout2_restoration_project/releases" target="_blank" title="ESSENTIAL MODERN PATCH">FALLOUT 2 RESTORATION PROJECT REMASTERED</a> <br> BY BGFORGENET / MODERN, SUPPORTED FORK OF KILLAP'S PATCH
+<br>
+<br>
+<a href="https://github.com/bgforgenet/fo2tweaks/releases" target="_blank" title="SMALL CONVENIENT TWEAKS HERE'N'THERE">FO2TWEAKS</a> <br> MISC FIXES BY BGFORGENET
+<br>
+<br>
+<a href="https://sourceforge.net/projects/sfall/files" target="_blank" title="FALLOUT GAME ENGINE">SFALL ENGINE</a> <br> BY TIMESLIP
+<br>
+<br>
+<br>
+</p>
+</center>
+	<p style="background-color:#ff0080;">	
+<br>
+</p>
+	<center>
+	<a href="#bottom" title="GO TO BOTTOM OF THE PAGE">▼</a> <h2 id="stalker"> ░ STALKER </h2> <h3> OGSR MOD: CHEEKI-BREEKI IN A MORE VIVID WAY </h3> <a href="#top" title="GO TO TOP OF THE PAGE">▲</a>
+	</center>
+	
+<center>
+
+<p style="background-color:#00134d;">
+<br> <br>
+<a href="https://www.moddb.com/mods/old-good-stalker-evolution/downloads/ogse-0693-ogsr-x64-10007-engine-update" target="_blank" title="MODDB LINK">OGSR</a> IS A MODERN SUCCESSOR OF <a href="https://www.moddb.com/mods/old-good-stalker-evolution" target="_blank" title="MODDB LINK">OGSE</a>, <br> <br> WHICH IS EXTREMELY LARGE MOD FOR CLASSIC HORROR-SHOOTER <a href="https://www.gog.com/game/stalker_shadow_of_chernobyl" target="_blank" title="BUY STALKER"> S.T.A.L.K.E.R: SHADOW OF CHERNOBYL</a>.
+<br>
+<br>
+IT IS BASED UPON HEAVILY ENHANCED <a href="https://github.com/OGSR/OGSR-Engine" target="_blank" title="GITHUB PAGE"> X64 VERSION OF X-RAY ENGINE</a>. <br> <br>
+THE MOST RECENT RUSSIAN VERSION CAN BE DOWNLOADED <a href="https://www.amk-team.ru/forum/topic/14062-ogsr-mod" target="_blank">HERE</a>.
+<br>
+<br>
+<br>
+MY PERSONAL MODIFICATION, WHICH IS CHANGING MUSIC ON VINYL DISCS AND RADIO CASSETTE PLAYERS. 
+<br>
+<br>
+<a style="border: 8px solid #ff0080"> AMBIENT, DUB, RETRO WAVE, RAP, POP, METAL. </a>
+<br>
+<br>
+<br>
+MOD DOESN'T MESS WITH BEAUTIFUL BACKDROP AMBIENT OF <a href="https://www.last.fm/music/MoozE" target="_blank">MOOZE</a> & ATMOSPHERIC CHILDREN SONGS AT PRIPYAT LOCATION.
+<br>
+<br>
+<a href="https://mega.nz/file/f95mnaJD#-Wa3-96qHg43L-gYLCAvL66kDINLAj2sP-HtvhPKsn8" target="_blank" title="TRACK NAMES IN JUKEBOX MATCH REALITY ONLY IN RUSSIAN VERSION. ENGLISH ONE NEEDS FIXING. TO INSTALL SIMPLY EXTRACT'N'COPY WITH OVERWRITE ALL FILES TO STALKER FOLDER.">VINYL & RADIO MOD V0.1a FOR STALKER OGSR V1.0.7 (03.02.20)</a>
+<br>
+<br>
+<br>
+</p>
+</center>
+	<p style="background-color:#ff0080;">	
+<br>
+</p>
+	<center>
+	<a href="#bottom" title="GO TO BOTTOM OF THE PAGE">▼</a> <h2 id="links"> ░ LINKS</h2> <h3> BEST OF THE WEB </h3> <a href="#top" title="GO TO TOP OF THE PAGE">▲</a>
+	</center>
+
+<center>	
+<p style="background-color:#00134d;"> <br> <br>
+<a style="border: 8px solid #ff0080"> SECTION WHERE I WILL STORE THE MOST AWESOME AND INTERESTING LINKS OF THE WIDE WEB.  </a>
+<br> 
+<br>
+<br>
+<a href="https://searx.me" target="_blank" title="FORGET ABOUT UGLY GOGLE"> BEST PRIVATE SEARCH ENGINE</a>
+<br>
+<br>
+<a href="https://retrosystemsrevival.blogspot.com" target="_blank" title="BY RETRO SYSTEMS REVIVAL">VINTAGE SOFTWARE COLLECTION</a> 
+<br>
+<br>
+<a href="https://www.win-raid.com" target="_blank" title="BY WIN-RAID">HW/SW MODDING FORUM</a>
+<br>
+<br>
+<a href="https://www.vogons.org" target="_blank" title="BY VOGONS">VINTAGE GAMING FORUM</a>
+<br>
+<br>
+<a href="https://digdeeper.neocities.org" target="_blank" title="BY FRENCH PRIVACY ACTIVIST">VERY NEAT PRIVACY ARTICLES</a>
+<br>
+<br>
+<a href="https://www.my80stv.com" target="_blank" title="COOL 80s TV-SET">80s TELEVISION</a>
+<br>
+<br>
+<a href="https://www.youtube.com/HighTreason610" target="_blank" title="BY HIGHTREASON610">NEOPUNK YT CHANNEL ABOUT OBSOLETE TECH</a>
+<br>
+<br>
+<a href="https://razorback95.com" target="_blank" title="BY KUGEE">RETRO COMPUTER WEBSITE</a>
+<br>
+<br>
+<a href="https://www.renoise.com" target="_blank" title="CLASSIC, BUT MODERN MUSIC TRACKER">RENOISE TRACKER</a>
+<br>
+<br>
+<a href="https://openmpt.org/" target="_blank" title="CLASSIC TRACKER FOR OLDSCHOOL FORMATS">OPEN MODPLUG TRACKER</a>
+<br>
+<br>
+<br>
+<a style="border: 8px solid #2151ff"> STAY TUNED, MORE TO COME ....</a>
+<br>
+<br>
+<br>
+</p>
+</center>
+	<p style="background-color:#ff0080;">	
+<br>
+</p>
+	<center>
+	<a href="#bottom" title="GO TO BOTTOM OF THE PAGE">▼</a> <h2 id="support"> █ SUPPORT ME</h2> <h3> DONATIONS </h3>	<a href="#top" title="GO TO TOP OF THE PAGE">▲</a>
+	</center>
+
+<center>
+<p style="background-color:#00134d;"> <br> <br> 
+<a style="border: 8px solid #ff0080" title="OF COURSE ONLY IF YOU ARE UP TO IT!"> IN THIS SECTION YOU CAN GREET ME WITH SOME PEANUTS, </a> <br> <br>
+<a style="border: 8px solid #ff0080" title="OF COURSE ONLY IF YOU ARE UP TO IT!"> BUT ONLY IN THE CASE WHEN YOU THINK THAT I'M REALLY DESERVED THEM! </a>
+<br> <br> <br>
+<a href="#micro" title="PURCHASE MY ART">PURCHASE MY ART</a> <a href="https://www.patreon.com/trackerninja" target="_blank" title="BECOME MY PATRON">PATREON</a> <a href="https://www.paypal.me/spacedrone808" target="_blank" title="DONATE">PAYPAL</a><br><br>
+<a style="border: 8px solid #2151ff">ETH WALLET:</a> <a style="border: 8px solid #2151ff">0x260f5292fdcc56213599ce2badc8141ce5b2a647</a> <br><br><br>
+</p>
+	<p style="background-color:white;">	<br>
+<div id="app">
+  <div id="wrapper">
+    <p class="glitch" data-text="█▓▒░ BROUGHT TO YOU BY SPACEDRONE808, LETTER N & NUMBER 0 ░▒▓█">█▓▒░ BROUGHT TO YOU BY SPACEDRONE808,<br>LETTER N & NUMBER 0 ░▒▓█</p>
+  </div>
+</div>
+<p style="background-color:white;">	
+<br>
+</p>
+<center>
+<a id="bottom"></a>
+<p style="background-color:#00134d;">
+<br> <br>
+<a style="border: 8px solid #ffffff">[L]2022</a>
+<br> 
+<br>
+<a style="border: 8px solid #ff0080"> [C]OPYLEFT & ABSENSE OF DESIGN BY SPACEDRONE808. </a>
+<br>
+MADE IN NOTEPAD.  108% ORIGINAL CODE. 
+<br>
+OPTIMIZED FOR DESKTOP VISITORS: >1600PX WIDTH.
+<br>
+TESTED IN ICEWEASEL 107 [x64]. 
+<br>
+<br>
+<a style="color:#2151ff;"> SITE UPDATED ON 2022.11.18 </a>
+<br>
+<br>
+<a style="border: 8px solid #ffffff" title="NICE ONE, HUH?"> [C] LOADS IN A SECOND!</a>
+<br>
+<br>
+<br>
+<a style="border: 8px solid #2151ff" title="FUCK INTEL & WIN10!"> H/W: AMD S/W: WIN7x64</a> <a href="#top" title="WANNA GET HIGH, HUH?">▲</a>
+<br>
+<br>
+<br>
+</p>
+</center>
+	<p style="background-color:#ff0080;">	
+<br>
+</p>
+<p style="color:#ff0080;"> IF YOU WOULD LIKE TO REPORT ERROR OR JUST WANT TO DROP ME A LINE: </p>
+<img src="img\m.gif" style="border: 4px solid #ff0080;" title="CONTACT E-MAIL" alt="CONTACT E-MAIL">
+<br>
+<img src="img\rainbow.gif">
+<p style="color:#ff0080"> FEEL FREE TO USE THIS BUTTON TO LINK ME ON YOUR SITE: 
+<br> <br>
+<img src="/img/banner808.gif" title="YEAH, THIS IS COOL LIL' BANNER FOR  MAY PAGE" alt="YEAH, HERE IS COOL LIL' BANNER FOR MY PAGE"> </p>
+<textarea name="text" cols="25" rows="5" style="width: 328px; height: 68px; border: 4px solid #ff0080" title="COPY THIS CODE TO YER WEBSITE!"> <a href="https://win7sp2.neocities.org" "target="_blank"><img src="/img/banner808.gif"</a>
+</textarea> <br><br>
+
+<a title="YER HITS PPL"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=wz9gcukumbtnzkw7tw5l8swyzd5drqsa" border="0" title="YER HITS PPL" alt="YER HITS PPL"></a> 
+</center>
+<p style="background-color:#ff0080;">	
+<br>
+</p>
+<center>
+<p style="background-color:#ff0080;">
+<br>
+<a id="tvset"></a>
+<iframe width="512" height="384" style="border: 8px solid white;" src="https://www.youtube-nocookie.com/embed/irfXSw55DUo" title="YT LOOK MUM NO COMPUTER VID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"></iframe> <br><br>
+</p>
+</center>
+
+<p style="background-color:#ff0080;">	
+<br>
+</p>
+<br>
+<center>
+<br><br>
+
+<object data="https://www.my90stv.com" width="848" height="600"> <embed src="https://www.my90stv.com" width="848" height="600"> </embed> ERROR: EMBEDDED DATA COULD NOT BE DISPLAYED. </object>
+
+</center>
+
+<p style="background-color:#ff0080;">	
+<br>
+</p>
+
+<center>
+<p>
+<img src="/img/0dos.gif"><img src="/img/1windows98.gif"><img src="/img/2imissxp.gif"><img src="/img/3linuxnow.gif"><img src="/img/4win10no.gif"><img src="/img/5amiga_friendly.gif"><img src="/img/6amd_powered.gif"><img src="/img/7best_ns.gif"><img src="/img/8edpadico.gif"><img src="/img/9gramyre.gif"><img src="/img/10_5absolute_ftp.gif"><img src="/img/11modarchive.gif"><img src="/img/12_98plusani.gif"><img src="/img/13rainbow_bev.gif">
+</p>
+
+<p>
+<img src="img\anibanner.gif"><img src="img\atmturbo.gif"><img src="img\button.gif"><img src="img\colorhunt.gif"><img src="img\dbfire88.gif"><img src="img\deadlyprogramming.gif"><img src="img\freewareguide.gif"><img src="img\galaxydiamond.gif"><img src="img\h-free-anim.gif"><img src="img\m-lol.gif"><img src="img\noodle.gif"><img src="img\raa.gif"><img src="img\spacelink.gif">
+</p>
+</center>
+</body>
+	
+</html>
